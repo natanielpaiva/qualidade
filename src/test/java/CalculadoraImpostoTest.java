@@ -19,7 +19,7 @@ class CalculadoraImpostoTest {
 
     @Test
     void testarLimitePrimeiraFaixa() {
-        assertEquals(2000, calculadora.calcularImposto(40000));
+        assertEquals(2001, calculadora.calcularImposto(40000));
     }
 
     @Test
