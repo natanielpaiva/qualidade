@@ -1,4 +1,4 @@
-package integracao;
+package org.example.integracao;
 
 
 import org.example.integracao.CalculadoraController;

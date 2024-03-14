@@ -1,4 +1,4 @@
-package cobertura;
+package org.example.cobertura;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

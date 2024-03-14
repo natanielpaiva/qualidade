@@ -1,4 +1,4 @@
-package cobertura;
+package org.example.cobertura;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -17,6 +17,22 @@ public class AvaliacaoTest {
     public void testVerificaNotaReprovado() {
         Avaliacao avaliacao = new Avaliacao();
         String resultado = avaliacao.verificaNota(65);
+        assertEquals("Reprovado", resultado);
+    }
+
+    // Novo teste para nota no limite de aprovação
+    @Test
+    public void testVerificaNotaNoLimiteAprovacao() {
+        Avaliacao avaliacao = new Avaliacao();
+        String resultado = avaliacao.verificaNota(70);
+        assertEquals("Aprovado", resultado);
+    }
+
+    // Novo teste para nota logo abaixo do limite de aprovação
+    @Test
+    public void testVerificaNotaAbaixoLimiteAprovacao() {
+        Avaliacao avaliacao = new Avaliacao();
+        String resultado = avaliacao.verificaNota(69);
         assertEquals("Reprovado", resultado);
     }
 }
